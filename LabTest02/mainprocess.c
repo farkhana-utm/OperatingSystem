@@ -32,7 +32,7 @@ int main() {
     if (pid == 0) {
         // First child process
         create_child_processes("./subprocess1", 2);
-        sleep(1800); // Sleep for 30 minutes
+        sleep(5200); // Sleep for 30 minutes
         exit(0);
     } else {
         pid = fork();
@@ -40,7 +40,7 @@ int main() {
         if (pid == 0) {
             // Second child process
             create_child_processes("./subprocess2", 3);
-            sleep(1800); // Sleep for 30 minutes
+            sleep(5200); // Sleep for 30 minutes
             exit(0);
         }
     }
